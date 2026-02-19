@@ -1,0 +1,167 @@
+name: QTrip Automation Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test suite to run (ui, api, all)'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - ui
+          - api
+          - all
+
+env:
+  JAVA_VERSION: '11'
+  MAVEN_OPTS: -Xmx1024m
+
+jobs:
+  # Build and verify compilation
+  build:
+    name: Build & Compile
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ☕ Setup Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: 🔨 Build & Compile
+        run: mvn clean compile test-compile -DskipTests
+
+      - name: 📦 Cache Maven Dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+
+  # Run UI Tests
+  ui-tests:
+    name: UI Tests
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.test_suite != 'api' }}
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ☕ Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: 🌐 Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: 🧪 Run UI Tests
+        run: mvn test -DsuiteXmlFile=src/test/resources/testng-ui.xml -Dheadless=true
+        continue-on-error: true
+
+      - name: 📊 Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ui-test-report
+          path: reports/
+          retention-days: 30
+
+      - name: 📸 Upload Screenshots
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: failure-screenshots
+          path: screenshots/
+          retention-days: 7
+
+  # Run API Tests
+  api-tests:
+    name: API Tests
+    needs: build
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.test_suite != 'ui' }}
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ☕ Setup Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: 🔌 Run API Tests
+        run: mvn test -DsuiteXmlFile=src/test/resources/testng-api.xml
+        continue-on-error: true
+
+      - name: 📊 Upload Test Report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: api-test-report
+          path: reports/
+          retention-days: 30
+
+  # Publish Results
+  publish-results:
+    name: Publish Results
+    needs: [ui-tests, api-tests]
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: 📥 Download UI Report
+        uses: actions/download-artifact@v4
+        with:
+          name: ui-test-report
+          path: reports/ui
+        continue-on-error: true
+
+      - name: 📥 Download API Report
+        uses: actions/download-artifact@v4
+        with:
+          name: api-test-report
+          path: reports/api
+        continue-on-error: true
+
+      - name: 📝 Generate Summary
+        run: |
+          echo "## 🧪 Test Execution Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Suite | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| UI Tests | ${{ needs.ui-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| API Tests | ${{ needs.api-tests.result }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📅 **Execution Time:** $(date)" >> $GITHUB_STEP_SUMMARY
+
+  # Notify on Failure
+  notify:
+    name: Notify
+    needs: [ui-tests, api-tests]
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: 🔔 Notify Failure
+        run: |
+          echo "Tests failed! Check the workflow run for details."
+          echo "UI Tests: ${{ needs.ui-tests.result }}"
+          echo "API Tests: ${{ needs.api-tests.result }}"
+

@@ -1,0 +1,26 @@
+[
+  {
+    "testCaseId": "TC001",
+    "description": "Valid user registration and login",
+    "email": "testuser@example.com",
+    "password": "Test@123",
+    "firstName": "John",
+    "lastName": "Doe",
+    "expectedResult": "User should be logged in successfully"
+  },
+  {
+    "testCaseId": "TC002",
+    "description": "Login with invalid credentials",
+    "email": "invalid@example.com",
+    "password": "wrongpassword",
+    "expectedResult": "Error message should be displayed"
+  },
+  {
+    "testCaseId": "TC003",
+    "description": "Login with empty password",
+    "email": "testuser@example.com",
+    "password": "",
+    "expectedResult": "Validation error should be shown"
+  }
+]
+

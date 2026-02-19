@@ -1,19 +1,26 @@
+# ============================================
+# QTrip Automation Framework - Git Ignore
+# ============================================
+
+# Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-.kotlin
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+# IDE - IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### Eclipse ###
+# IDE - Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -22,18 +29,52 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# IDE - NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+# IDE - VS Code
+.vscode/
+
+# Build
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+# Test Output
+test-output/
+screenshots/
+logs/
+*.log
 
-### Mac OS ###
+# Reports (keep structure, ignore generated)
+reports/*.html
+reports/*.json
+!reports/.gitkeep
+
+# OS Generated
 .DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# Environment files (may contain secrets)
+.env
+.env.local
+*.env
+
+# Selenium/WebDriver
+geckodriver.log
+chromedriver.log
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Kotlin
+.kotlin

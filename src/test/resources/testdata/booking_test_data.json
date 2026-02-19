@@ -1,0 +1,23 @@
+[
+  {
+    "testCaseId": "TC_BOOK_001",
+    "description": "Book adventure for single person",
+    "city": "Bengaluru",
+    "adventureName": "Kayaking",
+    "guestName": "John Doe",
+    "date": "2026-03-15",
+    "personCount": 1,
+    "expectedResult": "Booking should be successful"
+  },
+  {
+    "testCaseId": "TC_BOOK_002",
+    "description": "Book adventure for multiple persons",
+    "city": "Goa",
+    "adventureName": "Beach Camping",
+    "guestName": "Jane Smith",
+    "date": "2026-04-20",
+    "personCount": 4,
+    "expectedResult": "Booking should be successful"
+  }
+]
+

@@ -1,6 +1,6 @@
 package com.qtrip.utils;
 
-import com.qtrip.constants.FrameworkConstants;
+import com.qtrip.config.EnvironmentManager;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
@@ -10,6 +10,11 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.*;
 
+/**
+ * Excel-based data provider utility for data-driven tests.
+ *
+ * @author Natarajan M
+ */
 public final class ExcelUtils {
 
     @DataProvider(name = "getData")
@@ -17,31 +22,31 @@ public final class ExcelUtils {
         String testMethodName = m.getName();
         String sheetName = testMethodName;
 
-        // --- MAPPING LOGIC START ---
-        // Maps your new Method Names to your existing Excel Sheet Names
-        if (testMethodName.equals("verifyRegistrationAndLogin")) {
-            sheetName = "TestCase01";
-        } else if (testMethodName.equals("verifySearchAndFilter")) {
-            sheetName = "TestCase02";
-        } else if (testMethodName.equals("verifyBookingFlow")) {
-            sheetName = "TestCase03";
-        }// Inside the if/else block in ExcelUtils.java
-        else if (testMethodName.equals("verifyReliabilityFlow")) {
-            sheetName = "TestCase04";
+        // Map method names to Excel sheet names
+        switch (testMethodName) {
+            case "verifyRegistrationAndLogin":
+                sheetName = "TestCase01";
+                break;
+            case "verifySearchAndFilter":
+                sheetName = "TestCase02";
+                break;
+            case "verifyBookingFlow":
+                sheetName = "TestCase03";
+                break;
+            case "verifyReliabilityFlow":
+                sheetName = "TestCase04";
+                break;
         }
 
-        // --- MAPPING LOGIC END ---
+        String excelPath = EnvironmentManager.get("excel.path", "src/test/resources/DatasetsforQTrip.xlsx");
 
-        System.out.println("Looking for Excel Sheet: " + sheetName); // Debug log
-
-        try (FileInputStream fs = new FileInputStream(FrameworkConstants.EXCEL_PATH);
+        try (FileInputStream fs = new FileInputStream(excelPath);
              XSSFWorkbook workbook = new XSSFWorkbook(fs)) {
 
             XSSFSheet sheet = workbook.getSheet(sheetName);
 
-            // If sheet is missing, throw error instead of silent skip
             if (sheet == null) {
-                throw new RuntimeException("CRITICAL ERROR: Sheet '" + sheetName + "' not found in Excel file!");
+                throw new RuntimeException("Sheet '" + sheetName + "' not found in Excel file!");
             }
 
             int rowNum = sheet.getLastRowNum();
