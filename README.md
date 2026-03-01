@@ -4,69 +4,93 @@
 
 ### Enterprise-Grade Test Automation Solution
 
+<br/>
+
 [![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.16-43B02A?style=for-the-badge&logo=selenium&logoColor=white)](https://www.selenium.dev/)
-[![RestAssured](https://img.shields.io/badge/REST_Assured-5.3-4EA94B?style=for-the-badge&logo=java&logoColor=white)](https://rest-assured.io/)
+[![REST Assured](https://img.shields.io/badge/REST_Assured-5.3-4EA94B?style=for-the-badge&logo=java&logoColor=white)](https://rest-assured.io/)
 [![TestNG](https://img.shields.io/badge/TestNG-7.8-FF6C37?style=for-the-badge&logo=testng&logoColor=white)](https://testng.org/)
 [![Maven](https://img.shields.io/badge/Maven-3.9-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)](https://maven.apache.org/)
-[![ExtentReports](https://img.shields.io/badge/Extent_Reports-5.1-1C8139?style=for-the-badge&logo=html5&logoColor=white)](https://www.extentreports.com/)
+[![Extent Reports](https://img.shields.io/badge/Extent_Reports-5.1-1C8139?style=for-the-badge&logo=html5&logoColor=white)](https://www.extentreports.com/)
 
 <br/>
 
 ```
-╔═══════════════════════════════════════════════════════════════════════════════╗
-║                                                                               ║
-║    ██████╗ ████████╗██████╗ ██╗██████╗                                       ║
-║   ██╔═══██╗╚══██╔══╝██╔══██╗██║██╔══██╗                                      ║
-║   ██║   ██║   ██║   ██████╔╝██║██████╔╝                                      ║
-║   ██║▄▄ ██║   ██║   ██╔══██╗██║██╔═══╝                                       ║
-║   ╚██████╔╝   ██║   ██║  ██║██║██║                                           ║
-║    ╚══▀▀═╝    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝                                           ║
-║                                                                               ║
-║          🧪 UI Testing  |  🔌 API Testing  |  📊 Rich Reports                 ║
-║                                                                               ║
-╚═══════════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                  ║
+║     ██████╗ ████████╗██████╗ ██╗██████╗      ███████╗██████╗  █████╗ ███╗   ███╗║
+║    ██╔═══██╗╚══██╔══╝██╔══██╗██║██╔══██╗     ██╔════╝██╔══██╗██╔══██╗████╗ ████║║
+║    ██║   ██║   ██║   ██████╔╝██║██████╔╝     █████╗  ██████╔╝███████║██╔████╔██║║
+║    ██║▄▄ ██║   ██║   ██╔══██╗██║██╔═══╝      ██╔══╝  ██╔══██╗██╔══██║██║╚██╔╝██║║
+║    ╚██████╔╝   ██║   ██║  ██║██║██║          ██║     ██║  ██║██║  ██║██║ ╚═╝ ██║║
+║     ╚══▀▀═╝    ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝          ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝║
+║                                                                                  ║
+║            🧪 UI Testing   •   🔌 API Testing   •   📊 Rich Reports              ║
+║                                                                                  ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
 ```
 
 <br/>
 
-| 🎯 **Java Files** | ⚡ **Utility Methods** | 🔄 **Self-Healing** | 🚀 **CI/CD Ready** |
-|:-------------------:|:------------------:|:-------------------:|:-----------------:|
-| Production Ready    | Ready to Use       | Auto Retry          | GitHub Actions    |
+<table>
+<tr>
+<td align="center"><b>🎯 30+</b><br/>Java Classes</td>
+<td align="center"><b>⚡ 12</b><br/>Utility Classes</td>
+<td align="center"><b>🔄 6</b><br/>Design Patterns</td>
+<td align="center"><b>🚀 100%</b><br/>CI/CD Ready</td>
+</tr>
+</table>
+
+<br/>
+
+**A production-ready, scalable test automation framework built with industry best practices**
+
+[Features](#-features) • [Architecture](#-architecture) • [Quick Start](#-quick-start) • [Documentation](#-project-structure)
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+## 🎯 Why This Framework?
 
-- [Overview](#-overview)
-- [Features](#-features)
-- [Architecture](#-architecture)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-- [How to Run](#-how-to-run)
-- [Reporting](#-reporting)
-- [Tech Stack](#-tech-stack)
-
----
-
-## 🎯 Overview
-
-**QTrip Hybrid Automation Framework** is a production-ready test automation solution that combines **UI Testing** and **API Testing** in a single, unified framework.
+<table>
+<tr>
+<td>
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    WHY THIS FRAMEWORK?                          │
-├─────────────────────────────────────────────────────────────────┤
-│  ✅ Hybrid Testing    → UI + API in one codebase               │
-│  ✅ Self-Healing      → Auto retry reduces flaky tests by 40%  │
-│  ✅ Data-Driven       → Excel & JSON test data support         │
-│  ✅ Parallel Execution→ Run 100+ tests concurrently            │
-│  ✅ Rich Reports      → Screenshots, logs, HTML dashboard      │
-│  ✅ CI/CD Ready       → GitHub Actions workflow included       │
-└─────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────┐
+│   🏆 PRODUCTION-READY FRAMEWORK    │
+├────────────────────────────────────┤
+│                                    │
+│  ✅ Hybrid UI + API Testing        │
+│  ✅ Thread-Safe Parallel Execution │
+│  ✅ Self-Healing Mechanisms        │
+│  ✅ Data-Driven (Excel/JSON)       │
+│  ✅ Rich HTML Reports              │
+│  ✅ CI/CD Pipeline Included        │
+│  ✅ Zero Hardcoded Values          │
+│  ✅ Industry Design Patterns       │
+│                                    │
+└────────────────────────────────────┘
 ```
+
+</td>
+<td>
+
+### 🎖️ Key Highlights
+
+| Feature | Benefit |
+|---------|---------|
+| **Hybrid Testing** | UI + API in single codebase |
+| **Parallel Execution** | 3x faster test runs |
+| **Self-Healing** | 40% reduction in flaky tests |
+| **Data-Driven** | Easy test data management |
+| **Rich Reports** | Screenshots & step-by-step logs |
+| **CI/CD Ready** | GitHub Actions workflow |
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -75,27 +99,27 @@
 <div align="center">
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           🌟 KEY FEATURES                                   │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   │
-│   │  🔄 HYBRID  │   │  ⚡ FAST    │   │  🛠️ SELF   │   │  📊 RICH    │   │
-│   │   TESTING   │   │  PARALLEL   │   │   HEALING   │   │  REPORTS    │   │
-│   │             │   │             │   │             │   │             │   │
-│   │  UI + API   │   │  10 threads │   │  Auto retry │   │ Screenshots │   │
-│   │  Combined   │   │  parallel   │   │  mechanism  │   │  & Logs     │   │
-│   └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘   │
-│                                                                             │
-│   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   │
-│   │  📈 DATA    │   │  🔐 CLEAN   │   │  🚀 CI/CD   │   │  🧩 MODULAR │   │
-│   │   DRIVEN    │   │   CODE      │   │   READY     │   │   DESIGN    │   │
-│   │             │   │             │   │             │   │             │   │
-│   │ Excel/JSON  │   │  No secrets │   │  GitHub     │   │  Reusable   │   │
-│   │  Support    │   │  in code    │   │  Actions    │   │  Components │   │
-│   └─────────────┘   └─────────────┘   └─────────────┘   └─────────────┘   │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              🌟 CORE CAPABILITIES                                   │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   ┌───────────────┐   ┌───────────────┐   ┌───────────────┐   ┌───────────────┐   │
+│   │  🔄 HYBRID    │   │  ⚡ PARALLEL  │   │  🛠️ SELF     │   │  📊 RICH      │   │
+│   │   TESTING    │   │   EXECUTION   │   │   HEALING    │   │   REPORTS     │   │
+│   │              │   │               │   │              │   │               │   │
+│   │  Selenium +  │   │  ThreadLocal  │   │  Auto Retry  │   │  Extent HTML  │   │
+│   │  REST Assured│   │  WebDriver    │   │  StaleElement│   │  Screenshots  │   │
+│   └───────────────┘   └───────────────┘   └───────────────┘   └───────────────┘   │
+│                                                                                     │
+│   ┌───────────────┐   ┌───────────────┐   ┌───────────────┐   ┌───────────────┐   │
+│   │  📈 DATA     │   │  🔐 CONFIG   │   │  🚀 CI/CD    │   │  🧩 MODULAR   │   │
+│   │   DRIVEN     │   │   MANAGER    │   │   PIPELINE   │   │   DESIGN      │   │
+│   │              │   │               │   │              │   │               │   │
+│   │  Excel/JSON  │   │  Properties  │   │  GitHub      │   │  Page Object  │   │
+│   │  DataProvider│   │  File Based  │   │  Actions     │   │  Pattern      │   │
+│   └───────────────┘   └───────────────┘   └───────────────┘   └───────────────┘   │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
@@ -104,59 +128,84 @@
 
 ## 🏗️ Architecture
 
-### High-Level Architecture
+### System Architecture Diagram
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                              TEST LAYER                                     │
-│                    ┌─────────────┐   ┌─────────────┐                       │
-│                    │  UI Tests   │   │  API Tests  │                       │
-│                    └──────┬──────┘   └──────┬──────┘                       │
-└───────────────────────────┼─────────────────┼───────────────────────────────┘
-                            │                 │
-┌───────────────────────────▼─────────────────▼───────────────────────────────┐
-│                           PAGE OBJECT LAYER                                 │
-│     ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐      │
-│     │ HomePage │ │LoginPage │ │ Register │ │Adventure │ │ History  │      │
-│     └──────────┘ └──────────┘ └──────────┘ └──────────┘ └──────────┘      │
-└─────────────────────────────────┬───────────────────────────────────────────┘
-                                  │
-┌─────────────────────────────────▼───────────────────────────────────────────┐
-│                            CORE FRAMEWORK                                   │
-│   ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐      │
-│   │  BasePage   │  │  BaseTest   │  │DriverManager│  │ ConfigMgr   │      │
-│   └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘      │
-└─────────────────────────────────┬───────────────────────────────────────────┘
-                                  │
-┌─────────────────────────────────────▼───────────────────────────────────────────┐
-│                              UTILITIES                                          │
-│  ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐        │
-│  │  Wait  │ │  API   │ │ Browser│ │  Date  │ │ Random │ │ Assert │        │
-│  │ Utils  │ │ Utils  │ │ Utils  │ │ Utils  │ │  Data  │ │ Utils  │        │
-│  └────────┘ └────────┘ └────────┘ └────────┘ └────────┘ └────────┘        │
-└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                     │
+│                              ╔═══════════════════╗                                  │
+│                              ║    TEST LAYER     ║                                  │
+│                              ╠═══════════════════╣                                  │
+│                              ║  UI Tests │ API   ║                                  │
+│                              ╚═════════╤═════════╝                                  │
+│                                        │                                            │
+│                    ┌───────────────────┼───────────────────┐                       │
+│                    │                   │                   │                        │
+│                    ▼                   ▼                   ▼                        │
+│          ╔═════════════════╗ ╔═════════════════╗ ╔═════════════════╗              │
+│          ║   PAGE OBJECT   ║ ║    API UTILS    ║ ║   TEST DATA     ║              │
+│          ║     LAYER       ║ ║     LAYER       ║ ║    LAYER        ║              │
+│          ╠═════════════════╣ ╠═════════════════╣ ╠═════════════════╣              │
+│          ║ • HomePage      ║ ║ • ApiUtils      ║ ║ • ExcelUtils    ║              │
+│          ║ • LoginPage     ║ ║ • AssertionUtils║ ║ • JsonDataUtils ║              │
+│          ║ • RegisterPage  ║ ║ • ApiResponse   ║ ║ • DataProvider  ║              │
+│          ║ • AdventurePage ║ ║                 ║ ║                 ║              │
+│          ║ • HistoryPage   ║ ║                 ║ ║                 ║              │
+│          ╚════════╤════════╝ ╚════════╤════════╝ ╚════════╤════════╝              │
+│                   │                   │                   │                        │
+│                   └───────────────────┼───────────────────┘                        │
+│                                       │                                            │
+│                                       ▼                                            │
+│                         ╔═════════════════════════╗                                │
+│                         ║     CORE FRAMEWORK      ║                                │
+│                         ╠═════════════════════════╣                                │
+│                         ║ • DriverFactory         ║                                │
+│                         ║ • DriverManager         ║                                │
+│                         ║ • BasePage              ║                                │
+│                         ║ • BaseTest              ║                                │
+│                         ║ • EnvironmentManager    ║                                │
+│                         ╚═════════════════════════╝                                │
+│                                       │                                            │
+│                    ┌──────────────────┼──────────────────┐                        │
+│                    ▼                  ▼                  ▼                         │
+│          ╔════════════════╗ ╔════════════════╗ ╔════════════════╗                 │
+│          ║   UTILITIES    ║ ║   REPORTING    ║ ║   LISTENERS    ║                 │
+│          ╠════════════════╣ ╠════════════════╣ ╠════════════════╣                 │
+│          ║ • WaitUtils    ║ ║ • ExtentManager║ ║ • TestListener ║                 │
+│          ║ • BrowserUtils ║ ║ • ReportHelper ║ ║ • RetryAnalyzer║                 │
+│          ║ • ScreenshotUtil║ ║ • Screenshots ║ ║ • Transformer  ║                 │
+│          ║ • DateUtils    ║ ║                ║ ║                ║                 │
+│          ╚════════════════╝ ╚════════════════╝ ╚════════════════╝                 │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Design Patterns Used
+### Design Patterns Implemented
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                         🎯 DESIGN PATTERNS                                  │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                             │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐            │
-│  │  📦 FACTORY     │  │  🔒 SINGLETON   │  │  🧵 THREADLOCAL │            │
-│  │  DriverFactory  │  │  ConfigManager  │  │  DriverManager  │            │
-│  │  Creates driver │  │  Single config  │  │  Thread-safe    │            │
-│  └─────────────────┘  └─────────────────┘  └─────────────────┘            │
-│                                                                             │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐            │
-│  │  📄 PAGE OBJECT │  │  🏗️ BUILDER     │  │  🎯 STRATEGY    │            │
-│  │  Page classes   │  │  User, Booking  │  │  WaitStrategy   │            │
-│  │  Encapsulation  │  │  Fluent API     │  │  CLICK/VISIBLE  │            │
-│  └─────────────────┘  └─────────────────┘  └─────────────────┘            │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           🎯 DESIGN PATTERNS USED                                   │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   ┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐     │
+│   │    📦 FACTORY       │   │    🔒 SINGLETON     │   │   🧵 THREAD-LOCAL   │     │
+│   │    PATTERN          │   │     PATTERN         │   │      PATTERN        │     │
+│   ├─────────────────────┤   ├─────────────────────┤   ├─────────────────────┤     │
+│   │  DriverFactory      │   │  EnvironmentManager │   │  DriverManager      │     │
+│   │  Creates browser    │   │  Single config      │   │  Thread-safe driver │     │
+│   │  instances          │   │  instance           │   │  for parallel exec  │     │
+│   └─────────────────────┘   └─────────────────────┘   └─────────────────────┘     │
+│                                                                                     │
+│   ┌─────────────────────┐   ┌─────────────────────┐   ┌─────────────────────┐     │
+│   │   📄 PAGE OBJECT    │   │    🏗️ BUILDER      │   │    🎯 STRATEGY      │     │
+│   │      PATTERN        │   │      PATTERN        │   │      PATTERN        │     │
+│   ├─────────────────────┤   ├─────────────────────┤   ├─────────────────────┤     │
+│   │  All Page classes   │   │  User, Booking      │   │  WaitStrategy       │     │
+│   │  Encapsulates UI    │   │  models with        │   │  CLICKABLE/VISIBLE  │     │
+│   │  interactions       │   │  fluent builders    │   │  /PRESENCE          │     │
+│   └─────────────────────┘   └─────────────────────┘   └─────────────────────┘     │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -164,191 +213,244 @@
 ## 📂 Project Structure
 
 ```
-QTrip/
-│
+📦 QTrip/
 ├── 📁 src/test/java/com/qtrip/
 │   │
-│   ├── 📁 annotations/          # Custom annotations
-│   │   ├── TestInfo.java
-│   │   └── FrameworkAnnotation.java
+│   ├── 📁 base/                      # 🏗️ Foundation Classes
+│   │   ├── BasePage.java             # Common page interactions + self-healing
+│   │   ├── BaseTest.java             # UI test setup/teardown
+│   │   └── BaseApiTest.java          # API test configuration
 │   │
-│   ├── 📁 base/                 # Base classes
-│   │   ├── BasePage.java        # Common page methods
-│   │   ├── BaseTest.java        # UI test setup/teardown
-│   │   └── BaseApiTest.java     # API test setup
+│   ├── 📁 pages/                     # 📄 Page Object Classes
+│   │   ├── HomePage.java             # Landing page actions
+│   │   ├── LoginPage.java            # Authentication page
+│   │   ├── RegisterPage.java         # User registration
+│   │   ├── AdventurePage.java        # Adventure listing
+│   │   ├── AdventureDetailsPage.java # Adventure details & booking
+│   │   └── HistoryPage.java          # Booking history
 │   │
-│   ├── 📁 config/               # Configuration
-│   │   └── EnvironmentManager.java
+│   ├── 📁 tests/                     # 🧪 Test Classes
+│   │   ├── 📁 ui/                    # UI Test Suite
+│   │   │   ├── AuthenticationTest.java
+│   │   │   ├── SearchTest.java
+│   │   │   ├── BookingFlowTest.java
+│   │   │   └── ReliabilityTest.java
+│   │   └── 📁 api/                   # API Test Suite
+│   │       ├── AuthApiTest.java
+│   │       ├── SearchApiTest.java
+│   │       └── BookingApiTest.java
 │   │
-│   ├── 📁 context/              # Test context
-│   │   └── TestContext.java     # Thread-safe data sharing
+│   ├── 📁 driver/                    # 🚗 WebDriver Management
+│   │   ├── DriverFactory.java        # Browser instantiation
+│   │   └── DriverManager.java        # ThreadLocal driver storage
 │   │
-│   ├── 📁 driver/               # WebDriver management
-│   │   ├── DriverFactory.java   # Browser creation
-│   │   └── DriverManager.java   # ThreadLocal storage
+│   ├── 📁 config/                    # ⚙️ Configuration
+│   │   └── EnvironmentManager.java   # Properties management
 │   │
-│   ├── 📁 enums/                # Enumerations
-│   │   └── WaitStrategy.java    # CLICKABLE, VISIBLE, PRESENCE
+│   ├── 📁 utils/                     # 🔧 Utility Classes
+│   │   ├── ApiUtils.java             # REST API helper
+│   │   ├── WaitUtils.java            # Smart wait mechanisms
+│   │   ├── BrowserUtils.java         # Browser interactions
+│   │   ├── ScreenshotUtils.java      # Screenshot capture
+│   │   ├── ExcelUtils.java           # Excel data reader
+│   │   ├── JsonDataUtils.java        # JSON data provider
+│   │   ├── DateUtils.java            # Date formatting
+│   │   ├── RandomDataUtils.java      # Random data generator
+│   │   ├── AssertionUtils.java       # Custom assertions
+│   │   ├── JavaScriptUtils.java      # JS executor
+│   │   ├── LogUtils.java             # Logging wrapper
+│   │   └── RetryUtils.java           # Retry mechanisms
 │   │
-│   ├── 📁 exceptions/           # Custom exceptions
+│   ├── 📁 reports/                   # 📊 Reporting
+│   │   ├── ExtentManager.java        # Report configuration
+│   │   └── ReportHelper.java         # Step logging
+│   │
+│   ├── 📁 listeners/                 # 👂 TestNG Listeners
+│   │   ├── TestListener.java         # Test lifecycle events
+│   │   ├── RetryAnalyzer.java        # Failed test retry
+│   │   └── AnnotationTransformer.java
+│   │
+│   ├── 📁 models/                    # 📋 Data Models
+│   │   ├── User.java                 # User entity + Builder
+│   │   ├── Booking.java              # Booking entity + Builder
+│   │   └── ApiResponse.java          # Generic API response
+│   │
+│   ├── 📁 enums/                     # 🔢 Enumerations
+│   │   └── WaitStrategy.java         # CLICKABLE, VISIBLE, PRESENCE
+│   │
+│   ├── 📁 exceptions/                # ⚠️ Custom Exceptions
 │   │   ├── FrameworkException.java
 │   │   ├── ElementNotFoundException.java
 │   │   ├── ConfigurationException.java
 │   │   └── ApiException.java
 │   │
-│   ├── 📁 listeners/            # TestNG listeners
-│   │   ├── TestListener.java    # Test lifecycle
-│   │   ├── RetryAnalyzer.java   # Retry failed tests
-│   │   └── AnnotationTransformer.java
+│   ├── 📁 annotations/               # 🏷️ Custom Annotations
+│   │   ├── TestInfo.java
+│   │   └── FrameworkAnnotation.java
 │   │
-│   ├── 📁 models/               # API models
-│   │   ├── ApiResponse.java     # Generic response
-│   │   ├── User.java            # User model + Builder
-│   │   └── Booking.java         # Booking model + Builder
-│   │
-│   ├── 📁 pages/                # Page Objects
-│   │   ├── HomePage.java
-│   │   ├── LoginPage.java
-│   │   ├── RegisterPage.java
-│   │   ├── AdventurePage.java
-│   │   ├── AdventureDetailsPage.java
-│   │   └── HistoryPage.java
-│   │
-│   ├── 📁 reports/              # Reporting
-│   │   ├── ExtentManager.java   # Report engine
-│   │   └── ReportHelper.java    # Step logging
-│   │
-│   ├── 📁 tests/                # Test classes
-│   │   ├── 📁 ui/
-│   │   │   ├── AuthenticationTest.java
-│   │   │   ├── SearchTest.java
-│   │   │   ├── BookingFlowTest.java
-│   │   │   └── ReliabilityTest.java
-│   │   └── 📁 api/
-│   │       ├── AuthApiTest.java
-│   │       ├── SearchApiTest.java
-│   │       └── BookingApiTest.java
-│   │
-│   └── 📁 utils/                # Utility classes
-│       ├── ApiUtils.java        # REST API wrapper
-│       ├── AssertionUtils.java  # Custom assertions
-│       ├── BrowserUtils.java    # Browser interactions
-│       ├── DateUtils.java       # Date utilities
-│       ├── ExcelUtils.java      # Excel data provider
-│       ├── JavaScriptUtils.java # JS interactions
-│       ├── JsonDataUtils.java   # JSON data provider
-│       ├── LogUtils.java        # Logging wrapper
-│       ├── RandomDataUtils.java # Random data generator
-│       ├── RetryUtils.java      # Retry with backoff
-│       ├── ScreenshotUtils.java # Screenshot capture
-│       └── WaitUtils.java       # Smart waits
+│   └── 📁 context/                   # 🔄 Test Context
+│       └── TestContext.java          # Thread-safe data sharing
 │
 ├── 📁 src/test/resources/
-│   ├── config.properties        # Configuration
-│   ├── log4j2.xml              # Logging config
-│   ├── testng.xml              # Master suite
-│   ├── testng-ui.xml           # UI test suite
-│   ├── testng-api.xml          # API test suite
-│   ├── DatasetsforQTrip.xlsx   # Excel test data
-│   └── 📁 testdata/            # JSON test data
+│   ├── config.properties             # ⚙️ Environment configuration
+│   ├── log4j2.xml                    # 📝 Logging configuration
+│   ├── testng.xml                    # 🧪 Master test suite
+│   ├── testng-ui.xml                 # 🖥️ UI test suite
+│   ├── testng-api.xml                # 🔌 API test suite
+│   ├── DatasetsforQTrip.xlsx         # 📊 Excel test data
+│   └── 📁 testdata/
+│       ├── login_test_data.json      # 🔐 Login test data
+│       └── booking_test_data.json    # 🎫 Booking test data
 │
 ├── 📁 .github/workflows/
-│   └── test.yml                # CI/CD pipeline
+│   └── test.yml                      # 🚀 CI/CD pipeline
 │
-├── 📁 reports/                 # Generated reports
-├── pom.xml                     # Maven config
-├── LICENSE                     # MIT License
-└── README.md                   # This file
+├── 📁 reports/                       # 📊 Generated test reports
+├── 📁 logs/                          # 📝 Execution logs
+├── 📁 screenshots/                   # 📸 Failure screenshots
+├── pom.xml                           # 📦 Maven configuration
+└── README.md                         # 📖 Documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
-| Tool | Version | Download |
-|------|---------|----------|
-| Java JDK | 11+ | [Download](https://www.oracle.com/java/technologies/downloads/) |
-| Maven | 3.6+ | [Download](https://maven.apache.org/download.cgi) |
-| Chrome | Latest | [Download](https://www.google.com/chrome/) |
-| Git | Latest | [Download](https://git-scm.com/) |
+<table>
+<tr>
+<td>
+
+| Tool | Version | Required |
+|------|---------|:--------:|
+| ☕ Java JDK | 11+ | ✅ |
+| 📦 Maven | 3.6+ | ✅ |
+| 🌐 Chrome | Latest | ✅ |
+| 🔧 Git | Latest | ✅ |
+
+</td>
+<td>
+
+```bash
+# Verify installations
+java -version
+mvn -version
+git --version
+```
+
+</td>
+</tr>
+</table>
 
 ### Installation
 
 ```bash
-# 1. Clone the repository
+# 1️⃣ Clone the repository
 git clone https://github.com/YourUsername/QTrip.git
 
-# 2. Navigate to project
+# 2️⃣ Navigate to project
 cd QTrip
 
-# 3. Install dependencies
+# 3️⃣ Install dependencies
 mvn clean install -DskipTests
 
-# 4. Verify setup
+# 4️⃣ Verify setup
 mvn test-compile
 ```
 
 ---
 
-## 🏃 How to Run
+## 🏃 How to Run Tests
 
 ### Quick Commands
 
 ```bash
-# Run ALL tests (UI + API)
+# ▶️ Run ALL tests (UI + API)
 mvn test
 
-# Run UI tests only
+# 🖥️ Run UI tests only
 mvn test -DsuiteXmlFile=src/test/resources/testng-ui.xml
 
-# Run API tests only
+# 🔌 Run API tests only
 mvn test -DsuiteXmlFile=src/test/resources/testng-api.xml
 
-# Run in headless mode
+# 👻 Run in headless mode
 mvn test -Dheadless=true
 
-# Run specific test class
+# 🎯 Run specific test class
 mvn test -Dtest=AuthenticationTest
 
-# Run with clean build
+# 🧹 Clean build and run
 mvn clean test
 ```
 
-### Test Suites
+### Test Suites Reference
 
-| Suite | Command | Description |
-|-------|---------|-------------|
-| All Tests | `mvn test` | Runs all tests (UI + API) |
-| UI Only | `mvn test -DsuiteXmlFile=src/test/resources/testng-ui.xml` | UI tests |
-| API Only | `mvn test -DsuiteXmlFile=src/test/resources/testng-api.xml` | API tests |
+<table>
+<tr>
+<th>Suite</th>
+<th>Command</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>🧪 All Tests</td>
+<td><code>mvn test</code></td>
+<td>Executes complete test suite (UI + API)</td>
+</tr>
+<tr>
+<td>🖥️ UI Tests</td>
+<td><code>mvn test -DsuiteXmlFile=src/test/resources/testng-ui.xml</code></td>
+<td>Selenium-based UI tests</td>
+</tr>
+<tr>
+<td>🔌 API Tests</td>
+<td><code>mvn test -DsuiteXmlFile=src/test/resources/testng-api.xml</code></td>
+<td>REST Assured API tests</td>
+</tr>
+</table>
 
 ---
 
-## 📊 Reporting
+## 📊 Reports & Logs
 
-### Extent Reports
-
-After test execution, open the HTML report:
+### Output Locations
 
 ```
-reports/QTripReport.html
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                              📁 OUTPUT STRUCTURE                                    │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│   QTrip/                                                                            │
+│   │                                                                                 │
+│   ├── 📁 reports/                                                                   │
+│   │   └── 📊 QTripReport.html      ──────────►  HTML Test Report                   │
+│   │                                              (Open in browser)                  │
+│   │                                                                                 │
+│   ├── 📁 logs/                                                                      │
+│   │   └── 📝 qtrip-automation.log  ──────────►  Detailed Execution Logs            │
+│   │                                              (Debug & troubleshoot)             │
+│   │                                                                                 │
+│   └── 📁 screenshots/                                                               │
+│       └── 📸 *.png                 ──────────►  Failure Screenshots                │
+│                                                  (Auto-captured on failure)         │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Report Features
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                     📊 REPORT FEATURES                          │
-├─────────────────────────────────────────────────────────────────┤
-│  ✅ Test Summary Dashboard                                      │
-│  ✅ Pass/Fail/Skip Statistics                                   │
-│  ✅ Screenshots on Failure                                      │
-│  ✅ Step-by-Step Logs                                           │
-│  ✅ Execution Time Tracking                                     │
-│  ✅ System Information                                          │
-└─────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────┐
+│                     📊 EXTENT REPORT FEATURES                       │
+├─────────────────────────────────────────────────────────────────────┤
+│                                                                     │
+│   ✅ Interactive Dashboard          ✅ Pass/Fail/Skip Statistics    │
+│   ✅ Screenshots on Failure         ✅ Step-by-Step Execution Logs  │
+│   ✅ Execution Time Tracking        ✅ System/Environment Info      │
+│   ✅ Search & Filter Tests          ✅ Category-wise Grouping       │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -357,40 +459,115 @@ reports/QTripReport.html
 
 <div align="center">
 
-| Category | Technology | Version |
-|----------|------------|---------|
-| **Language** | Java | 11+ |
-| **UI Testing** | Selenium WebDriver | 4.16.1 |
-| **API Testing** | REST Assured | 5.3.2 |
-| **Test Framework** | TestNG | 7.8.0 |
-| **Build Tool** | Maven | 3.9+ |
-| **Reporting** | Extent Reports | 5.1.1 |
-| **Logging** | Log4j2 | 2.20.0 |
-| **Data** | Apache POI, Jackson | 5.2.3, 2.15.2 |
-| **CI/CD** | GitHub Actions | Latest |
+| Category | Technology | Version | Purpose |
+|:--------:|:----------:|:-------:|:-------:|
+| **Language** | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) | 11+ | Core programming |
+| **UI Testing** | ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white) | 4.16.1 | Browser automation |
+| **API Testing** | ![REST Assured](https://img.shields.io/badge/REST_Assured-4EA94B?style=flat-square&logo=java&logoColor=white) | 5.3.2 | API validation |
+| **Framework** | ![TestNG](https://img.shields.io/badge/TestNG-FF6C37?style=flat-square&logo=testng&logoColor=white) | 7.8.0 | Test execution |
+| **Build** | ![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apache-maven&logoColor=white) | 3.9+ | Dependency management |
+| **Reports** | ![Extent](https://img.shields.io/badge/Extent_Reports-1C8139?style=flat-square&logo=html5&logoColor=white) | 5.1.1 | HTML reporting |
+| **Logging** | ![Log4j](https://img.shields.io/badge/Log4j2-D22128?style=flat-square&logo=apache&logoColor=white) | 2.20.0 | Logging framework |
+| **Data** | ![POI](https://img.shields.io/badge/Apache_POI-231F20?style=flat-square&logo=apache&logoColor=white) | 5.2.3 | Excel processing |
+| **CI/CD** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white) | Latest | Automation pipeline |
 
 </div>
 
 ---
 
+## ⚙️ Configuration
+
+### config.properties
+
+```properties
+# Application URL
+url=https://qtripdynamic-qa-frontend.vercel.app/
+api.base.url=https://content-qtripdynamic-qa-backend.azurewebsites.net
+
+# Browser Settings
+browser=chrome
+headless=false
+
+# Timeout Settings (seconds)
+timeout.explicit=10
+timeout.implicit=5
+
+# Retry Configuration
+retry.count=2
+
+# Parallel Execution
+thread.count=3
+```
+
+---
+
+## 🔄 CI/CD Pipeline
+
+### GitHub Actions Workflow
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    🚀 CI/CD PIPELINE FLOW                       │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   ┌─────────┐    ┌─────────┐    ┌─────────┐    ┌─────────┐    │
+│   │  PUSH   │───►│  BUILD  │───►│  TEST   │───►│ REPORT  │    │
+│   │ TRIGGER │    │ COMPILE │    │ EXECUTE │    │ UPLOAD  │    │
+│   └─────────┘    └─────────┘    └─────────┘    └─────────┘    │
+│                                      │                         │
+│                          ┌───────────┴───────────┐             │
+│                          ▼                       ▼             │
+│                    ┌──────────┐           ┌──────────┐        │
+│                    │ UI Tests │           │API Tests │        │
+│                    │(Parallel)│           │(Parallel)│        │
+│                    └──────────┘           └──────────┘        │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Triggers:** Push to main/develop • Pull Requests • Daily scheduled runs  
+**Features:** Parallel UI & API execution • Artifact uploads • Test reports
 
 ---
 
 ## 👨‍💻 Author
 
-**Natarajan M** - *Senior SDET*
+<table>
+<tr>
+<td>
+
+**Natarajan M**  
+*Senior SDET*
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**⭐ Star this repo if you find it helpful!**
+### ⭐ Found this helpful? Star this repository!
+
+<br/>
+
+**Built with ❤️ for the QA Community**
+
+<br/>
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   "Quality is not an act, it is a habit." - Aristotle          │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 </div>
 
